@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a83eb280-068b-4f4d-be0d-076af05dc674" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/module/Blog/src/Blog/Entity/Article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/Blog/src/Blog/Entity/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/Blog/src/Blog/Entity/Comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module/Admin/view/admin/category/index.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Admin/config/module.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Admin/config/module.config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,18 +54,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Blog/src/Blog/Entity/Article.php">
+      <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Blog/src/Blog/Entity/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+            <state relative-caret-position="-132" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/CategoryController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Blog/src/Blog/Entity/Category.php">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/category/index.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Admin/config/module.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -95,12 +125,14 @@
         <option value="$PROJECT_DIR$/module/Admin/view/admin/index/index.phtml" />
         <option value="$PROJECT_DIR$/module/Admin/Module.php" />
         <option value="$PROJECT_DIR$/config/application.config.php" />
-        <option value="$PROJECT_DIR$/module/Admin/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b04dc375-7591-4ab9-a72a-ff334f9cf701/console.sql" />
         <option value="$PROJECT_DIR$/dump.sgl" />
         <option value="$PROJECT_DIR$/config/autoload/doctrine.local.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Controller/CategoryController.php" />
+        <option value="$PROJECT_DIR$/module/Admin/view/admin/category/index.phtml" />
+        <option value="$PROJECT_DIR$/module/Admin/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
       </list>
     </option>
   </component>
@@ -169,6 +201,121 @@
               <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="category" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local.zf.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="local.zf.com" type="b2602c69:ProjectViewProjectNode" />
@@ -247,11 +394,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module/Admin/view/admin/category" />
+      <recent name="$PROJECT_DIR$/module/Admin/src/Admin/Controller" />
       <recent name="$PROJECT_DIR$/module/Admin" />
       <recent name="$PROJECT_DIR$/module/Admin/view/admin/index" />
-      <recent name="$PROJECT_DIR$/module/Admin/src/Admin/Controller" />
       <recent name="$PROJECT_DIR$/module/Admin/config" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -282,7 +429,7 @@
       <workItem from="1537892973432" duration="3171000" />
       <workItem from="1537897045009" duration="602000" />
       <workItem from="1537897657884" duration="6596000" />
-      <workItem from="1537915137921" duration="14388000" />
+      <workItem from="1537915137921" duration="16628000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1537915430155</created>
@@ -319,11 +466,32 @@
       <option name="project" value="LOCAL" />
       <updated>1537994403168</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add blog entity">
+      <created>1537995434648</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537995434648</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add doctrine file">
+      <created>1537995510910</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537995510910</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add blog set get">
+      <created>1537995758492</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537995758492</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24757000" />
+    <option name="totallyTimeSpent" value="26997000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,15 +504,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-11" width="1869" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32983193" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32983193" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32984293" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.40966386" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.18506315" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.18506315" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.14772104" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -421,7 +588,10 @@
     <MESSAGE value="add doctrine" />
     <MESSAGE value="add .gitignore" />
     <MESSAGE value="add admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="add admin" />
+    <MESSAGE value="add blog entity" />
+    <MESSAGE value="add doctrine file" />
+    <MESSAGE value="add blog set get" />
+    <option name="LAST_COMMIT_MESSAGE" value="add blog set get" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -690,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/dd8c5cd7-185c-4194-b89d-4df52ddcf287.SCHEMA:zend">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -735,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Admin/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -759,13 +915,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Blog/src/Blog/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Blog/src/Blog/Entity/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        <state relative-caret-position="-1456">
+          <caret line="92" column="24" lean-forward="true" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Blog/src/Blog/Entity/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-862" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Blog/src/Blog/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/category/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
