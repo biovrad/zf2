@@ -36,5 +36,62 @@ class Category
     private $categoryName;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set categoryKey
+     *
+     * @param string $categoryKey
+     *
+     * @return Category
+     */
+    public function setCategoryKey($categoryKey)
+    {
+        $this->categoryKey = $categoryKey;
+
+        return $this;
+    }
+
+    /**
+     * Get categoryKey
+     *
+     * @return string
+     */
+    public function getCategoryKey()
+    {
+        return $this->categoryKey;
+    }
+
+    /**
+     * Set categoryName
+     *
+     * @param string $categoryName
+     *
+     * @return Category
+     */
+    public function setCategoryName($categoryName)
+    {
+        $this->categoryName = $categoryName;
+
+        return $this;
+    }
+
+    /**
+     * Get categoryName
+     *
+     * @return string
+     */
+    public function getCategoryName()
+    {
+        return $this->categoryName;
+    }
+}

@@ -60,5 +60,134 @@ class Article
     private $category;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return Article
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set article
+     *
+     * @param string $article
+     *
+     * @return Article
+     */
+    public function setArticle($article)
+    {
+        $this->article = $article;
+
+        return $this;
+    }
+
+    /**
+     * Get article
+     *
+     * @return string
+     */
+    public function getArticle()
+    {
+        return $this->article;
+    }
+
+    /**
+     * Set shortArticle
+     *
+     * @param string $shortArticle
+     *
+     * @return Article
+     */
+    public function setShortArticle($shortArticle)
+    {
+        $this->shortArticle = $shortArticle;
+
+        return $this;
+    }
+
+    /**
+     * Get shortArticle
+     *
+     * @return string
+     */
+    public function getShortArticle()
+    {
+        return $this->shortArticle;
+    }
+
+    /**
+     * Set isPublic
+     *
+     * @param string $isPublic
+     *
+     * @return Article
+     */
+    public function setIsPublic($isPublic)
+    {
+        $this->isPublic = $isPublic;
+
+        return $this;
+    }
+
+    /**
+     * Get isPublic
+     *
+     * @return string
+     */
+    public function getIsPublic()
+    {
+        return $this->isPublic;
+    }
+
+    /**
+     * Set category
+     *
+     * @param \Blog\Entity\Category $category
+     *
+     * @return Article
+     */
+    public function setCategory(\Blog\Entity\Category $category = null)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return \Blog\Entity\Category
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+}
