@@ -1,0 +1,37 @@
+ drop table if exists `article`;
+create table `article` (
+`id` int(11) not null AUTO_INCREMENT,
+`category` int(11) default null,
+`title` varchar(100) not null,
+`article` text not null,
+`short_article` text,
+`is_public` varchar(50) not null default '0',
+primary key (`id`),
+key `category` (`category`),
+constraint `article_ibfk_1` FOREIGN KEY (`category`) REFERENCES `category` (`id`)
+) engine = innodb default charset = utf8;
+
+
+ drop table if exists `category`;
+create table `category` (
+`id` int(11) not null AUTO_INCREMENT,
+`category_key` varchar(20)  not null,
+`category_name` varchar(100)  not null,
+primary key (`id`),
+unique key `category_key` (`category_key`)
+) engine = innodb default charset = utf8;
+
+
+ drop table if exists `comment`;
+create table `comment` (
+`id` int(11) not null AUTO_INCREMENT,
+`article` int(20)  default null,
+`user_email` varchar(50)  not null,
+`comment` text  not null,
+primary key (`id`),
+key `article` (`article`),
+constraint `comment_ibfk_1` FOREIGN KEY (`article`) REFERENCES `article` (`id`)
+) engine = innodb default charset = utf8;
+
+
+
