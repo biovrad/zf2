@@ -2,9 +2,24 @@
 
 <table class="table table-striped table-bordered">
     <tbody>
-    <th>#</th>
-    <th>Ключ</th>
-    <th>Название</th>
-    <th>Действие</th>
+    <tr>
+        <th>#</th>
+        <th>Ключ</th>
+        <th>Название</th>
+        <th>Действие</th>
+    </tr>
+    <tr>
+        <?php foreach ($category as $item):?>
+            <td><?=$item->getId()?></td>
+            <td><?=$item->getCategoryKey()?></td>
+            <td><?=$item->getCategoryName()?></td>
+            <td>
+                <a href="<?=$this->url('admin/category', array('action'=>'edit', 'id'=>$item->getId()))?>">Edit</a>
+                &nbsp;
+                <a href="<?=$this->url('admin/category', array('action'=>'delete', 'id'=>$item->getId()))?>"
+                   onclick="if (confirm('Удалить запись?')){document.location = this.href;} return false">Delete</a>
+            </td>
+        <?php endforeach;?>
+    </tr>
     </tbody>
 </table>

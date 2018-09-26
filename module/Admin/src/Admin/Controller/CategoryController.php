@@ -9,6 +9,9 @@ class CategoryController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $entityManager = $this->getServiceLocator()->get('Doctrine\ORM\EntityManager');
+        $query = $entityManager->createQuery('SELECT u FROM Blog\Entity\Category u ORDER BY u.id DESC');
+        $rows = $query->getResult();
+        return array('category' => $rows);
     }
 }
