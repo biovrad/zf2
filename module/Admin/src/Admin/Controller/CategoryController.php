@@ -13,7 +13,7 @@ class CategoryController extends BaseController
         $query = $this->getEntityManager()->createQuery('SELECT u FROM Blog\Entity\Category u ORDER BY u.id DESC');
         $rows = $query->getResult();
 
-        return array('category' => $rows);
+        return ['category' => $rows];
     }
 
     public function addAction(){
@@ -39,7 +39,7 @@ class CategoryController extends BaseController
                 $message = 'Ошибка параметров';
             }
         } else {
-            return array('form' =>$form);
+            return ['form' =>$form];
         }
 
         if($message){
@@ -90,7 +90,7 @@ class CategoryController extends BaseController
 
             }
         } else {
-            return array('form' =>$form, 'id' => $id);
+            return ['form' =>$form, 'id' => $id];
         }
 
         if($message){

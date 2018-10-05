@@ -1,47 +1,47 @@
 <?php
 
-return array(
-    'controllers' => array(
-        'invokables' => array(
+return [
+    'controllers' => [
+        'invokables' => [
             'Admin\Controller\Index' => 'Admin\Controller\IndexController',
             'category' => 'Admin\Controller\CategoryController'
-        ),
-    ),
+        ],
+    ],
 
-    'router' => array(
+    'router' => [
 
-        'routes' => array(
-            'admin' => array(
+        'routes' => [
+            'admin' => [
                 'type' => 'literal',
-                'options' => array(
+                'options' => [
                     'route'    => '/admin/',
-                    'defaults' => array(
+                    'defaults' => [
                         'controller' => 'Admin\Controller\Index',
                         'action'     => 'index',
-                    ),
-                ),
+                    ],
+                ],
 
                 'may_terminate' => true,
 
-                'child_routes' => array(
-                    'category' => array(
+                'child_routes' => [
+                    'category' => [
                         'type' => 'segment',
-                        'options' => array(
+                        'options' => [
                             'route'    => 'category/[:action/][:id/]',
-                            'defaults' => array(
+                            'defaults' => [
                                 'controller' => 'category',
                                 'action'     => 'index',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
-        ),
-    ),
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 
-    'view_manager' => array(
-        'template_path_stack' => array(
+    'view_manager' => [
+        'template_path_stack' => [
             __DIR__ . '/../view',
-        ),
-    ),
-);
+        ],
+    ],
+];

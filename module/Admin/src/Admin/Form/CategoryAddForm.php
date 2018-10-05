@@ -15,45 +15,45 @@ class CategoryAddForm extends Form
 
 //        $this->setInputFilter(new CategoryAddInputFilter());
 
-        $this->add(array(
+        $this->add([
             'name' => 'categoryKey',
             'type' => 'Text',
-            'options' => array(
+            'options' => [
                 'min' => 3,
                 'max' => 100,
                 'label' => 'Ключ',
-            ),
-            'attributes' => array(
+            ],
+            'attributes' => [
                 'class' => 'form-control',
                 'required' => 'required',
 
-            )
-        ));
+            ]
+        ]);
 
-        $this->add(array(
+        $this->add([
             'name' => 'categoryName',
             'type' => 'Text',
-            'options' => array(
+            'options' => [
                 'min' => 3,
                 'max' => 100,
                 'label' => 'Название',
-            ),
-            'attributes' => array(
+            ],
+            'attributes' => [
                 'class' => 'form-control',
                 'required' => 'required',
 
-            )
-        ));
+            ]
+        ]);
 
-        $this->add(array(
+        $this->add([
             'name' => 'submit',
             'type' => 'Submit',
-            'attributes' => array(
+            'attributes' => [
                 'value' => 'Сохранить',
                 'id' => 'bnt_submit',
                 'class' => 'bnt bnt-primary',
-            )
-        ));
+            ]
+        ]);
 
 
     }
