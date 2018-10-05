@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a83eb280-068b-4f4d-be0d-076af05dc674" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/module/Admin/view/admin/category/edit.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/CategoryController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +53,8 @@
       <file leaf-file-name="CategoryController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/CategoryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+            <state relative-caret-position="678">
+              <caret line="117" column="69" lean-forward="true" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
               <folding>
                 <element signature="e#36#101#0#PHP" expanded="true" />
               </folding>
@@ -121,6 +119,7 @@
       <find>EventManager</find>
       <find>flush</find>
       <find>persist</find>
+      <find>getRepository</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -430,7 +429,7 @@
       <workItem from="1537897045009" duration="602000" />
       <workItem from="1537897657884" duration="6596000" />
       <workItem from="1537915137921" duration="36416000" />
-      <workItem from="1538754333150" duration="6538000" />
+      <workItem from="1538754333150" duration="7376000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1537915430155</created>
@@ -523,11 +522,25 @@
       <option name="project" value="LOCAL" />
       <updated>1538774554206</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="edit category">
+      <created>1538776999909</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1538776999909</updated>
+    </task>
+    <task id="LOCAL-00015" summary="delete category">
+      <created>1538777719587</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1538777719587</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53323000" />
+    <option name="totallyTimeSpent" value="54161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,11 +553,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-11" width="1869" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32983193" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32983193" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32984293" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.40966386" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989496" visible="true" weight="0.18725975" />
@@ -611,7 +625,9 @@
     <MESSAGE value="add BaseController" />
     <MESSAGE value="add category" />
     <MESSAGE value="add vendor" />
-    <option name="LAST_COMMIT_MESSAGE" value="add vendor" />
+    <MESSAGE value="edit category" />
+    <MESSAGE value="delete category" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete category" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -943,13 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://dd8c5cd7-185c-4194-b89d-4df52ddcf287/schema/zend/table/category">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Blog/src/Blog/Entity/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -1012,10 +1021,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://dd8c5cd7-185c-4194-b89d-4df52ddcf287/schema/zend/table/category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        <state relative-caret-position="678">
+          <caret line="117" column="69" lean-forward="true" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
           <folding>
             <element signature="e#36#101#0#PHP" expanded="true" />
           </folding>

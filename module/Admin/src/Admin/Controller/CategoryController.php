@@ -110,8 +110,8 @@ class CategoryController extends BaseController
 
         try{
             $repository = $em->getRepository('Blog\Entity\Category');
-            $user = $repository->find($id);
-            $em->remove($user);
+            $category = $repository->find($id);
+            $em->remove($category);
             $em->flush();
         } catch (\Exception $ex){
             $status = 'error';
