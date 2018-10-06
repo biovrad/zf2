@@ -4,7 +4,8 @@ return [
     'controllers' => [
         'invokables' => [
             'Admin\Controller\Index' => 'Admin\Controller\IndexController',
-            'category' => 'Admin\Controller\CategoryController'
+            'category' => 'Admin\Controller\CategoryController',
+            'article' => 'Admin\Controller\ArticleController'
         ],
     ],
 
@@ -30,6 +31,16 @@ return [
                             'route'    => 'category/[:action/][:id/]',
                             'defaults' => [
                                 'controller' => 'category',
+                                'action'     => 'index',
+                            ],
+                        ],
+                    ],
+                    'article' => [
+                        'type' => 'segment',
+                        'options' => [
+                            'route'    => 'article/[:action/][:id/]',
+                            'defaults' => [
+                                'controller' => 'article',
                                 'action'     => 'index',
                             ],
                         ],

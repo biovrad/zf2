@@ -190,4 +190,24 @@ class Article
     {
         return $this->category;
     }
+
+    /**
+     * @return string
+     */
+    public function getArticleForTable()
+    {
+        $art = strip_tags($this->getArticle());
+        $art = mb_substr($art, 0, 15, 'UTF-8') . '...';
+        return $art;
+    }
+
+    /**
+     * @return string
+     */
+    public function getShortArticleForTable()
+    {
+        $art = strip_tags($this->getShortArticle());
+        $art = substr($art, 0, 20) . '...';
+        return $art;
+    }
 }
