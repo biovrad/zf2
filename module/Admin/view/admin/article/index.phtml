@@ -61,3 +61,5 @@ echo $flash->render('success', array('alert', 'alert-dismissible', 'alert-succes
     <?php endforeach;?>
     </tbody>
 </table>
+
+<?php echo $this->paginationControl($articles,'Sliding', 'pagination_control', ['route' => 'admin/article']);

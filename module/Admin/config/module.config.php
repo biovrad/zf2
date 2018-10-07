@@ -54,5 +54,8 @@ return [
         'template_path_stack' => [
             __DIR__ . '/../view',
         ],
+        'template_map' => [
+            'pagination_control' => __DIR__ . '/../view/layout/pagination_control.phtml'
+        ]
     ],
 ];
