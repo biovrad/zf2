@@ -50,6 +50,54 @@ return [
         ],
     ],
 
+    'service_manager' => [
+        'factories' => [
+            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
+            'admin_navigation' => 'Admin\Lib\AdminNavigationFactory'
+        ]
+    ],
+
+    'navigation' => [
+        'default' => [
+            [
+                'label' => 'Главная',
+                'route' => 'Home'
+            ]
+        ],
+        'admin_navigation' => [
+            [
+                'label' => 'Панель управления',
+                'route' => 'admin',
+                'action' => 'index',
+                'resource' => 'Admin\Controller\Index',
+
+                'pages' => [
+                    [
+                        'label' => 'Статьи',
+                        'route' => 'admin/article',
+                        'action' => 'index',
+                    ],
+                    [
+                        'label' => 'Добавить статью',
+                        'route' => 'admin/article',
+                        'action' => 'add',
+                    ],
+                    [
+                        'label' => 'Категории',
+                        'route' => 'admin/category',
+                        'action' => 'index',
+                    ],
+                    [
+                        'label' => 'Добавить категорию',
+                        'route' => 'admin/category',
+                        'action' => 'add',
+                    ],
+                ],
+            ]
+        ]
+
+    ],
+
     'view_manager' => [
         'template_path_stack' => [
             __DIR__ . '/../view',
