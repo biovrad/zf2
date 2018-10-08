@@ -106,4 +106,10 @@ return [
             'pagination_control' => __DIR__ . '/../view/layout/pagination_control.phtml'
         ]
     ],
+
+
+    'module_layouts' => [
+        'Admin' => 'layout/admin-layout',
+    ],
+
 ];

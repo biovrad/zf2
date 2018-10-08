@@ -6,6 +6,7 @@ return array(
         'ZendDeveloperTools',
         'DoctrineModule',
         'DoctrineORMModule',
+        'EdpModuleLayouts',
         'Blog',
         'Admin',
     ),
