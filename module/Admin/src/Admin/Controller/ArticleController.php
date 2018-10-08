@@ -119,4 +119,25 @@ class ArticleController extends BaseController
 
         return $this->redirect()->toRoute('admin/article');
     }
+
+    public function deleteAction(){
+        $id = (int) $this->params()->fromRoute('id', 0);
+        $em = $this->getEntityManager();
+
+        $status = 'success';
+        $message = 'Статья удаленна';
+
+        try{
+            $repository = $em->getRepository('Blog\Entity\Article');
+            $article = $repository->find($id);
+            $em->remove($article);
+            $em->flush();
+        } catch (\Exception $ex){
+            $status = 'error';
+            $message = 'Ошибка удаления статьи:' . $ex->getMessage();
+        }
+
+        $this->flashMessenger()->setNamespace($status)->addMessage($message);
+        return $this->redirect()->toRoute('admin/article');
+    }
 }
