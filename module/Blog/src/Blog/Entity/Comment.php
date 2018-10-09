@@ -3,6 +3,7 @@
 namespace Blog\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Zend\Form\Annotation;
 
 /**
  * Comment
@@ -25,6 +26,11 @@ class Comment
      * @var string
      *
      * @ORM\Column(name="user_email", type="string", length=50, nullable=false)
+     * @Annotation\Type("Zend\Form\Element\Hidden")
+     * @Annotation\Options({"label":"Email"})
+     * @Annotation\Required({"required":"true"})
+     * @Annotation\Attributes({"id":"user_email","class":"form-control", "required":"required"})
+     * @Annotation\Validator({"name":"EmailAddress"})
      */
     private $userEmail;
 
@@ -32,6 +38,12 @@ class Comment
      * @var string
      *
      * @ORM\Column(name="comment", type="text", length=65535, nullable=false)
+     * @Annotation\Type("Zend\Form\Element\Textarea")
+     * @Annotation\Required({"required":"true"})
+     * @Annotation\Filter({"name":"StripTags"})
+     * @Annotation\Attributes({"id":"user_comment","class":"form-control", "required":"required"})
+     * @Annotation\Options({"label":"Коментарий"})
+     * @Annotation\Validator({"name":"StringLength", "options":{"min":11, "max":30}})
      */
     private $comment;
 
@@ -42,9 +54,17 @@ class Comment
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="article", referencedColumnName="id")
      * })
+     * @Annotation\Options({"label":"Коментарий"})
      */
     private $article;
 
+
+    /**
+     * @Annotation\Type("Zend\Form\Element\Submit")
+     * @Annotation\Attributes({"value":"Сохранить","id":"btn_submit", "class":"btn btn-primary"})
+     * @Annotation\AllowEmpty({"allowempty":"true"})
+     */
+    private $submit;
 
 
     /**

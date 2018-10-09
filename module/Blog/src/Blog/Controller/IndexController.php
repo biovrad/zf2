@@ -4,6 +4,7 @@ namespace Blog\Controller;
 
 use Application\Controller\BaseController as BaseController;
 
+use Blog\Entity\Comment;
 use DoctrineORMModule\Paginator\Adapter\DoctrinePaginator as DoctrineAdapter;
 use Doctrine\ORM\Tools\Pagination\Paginator as ORMPaginator;
 use Zend\Paginator\Paginator;
@@ -31,6 +32,15 @@ class IndexController extends BaseController
         return ['articles' => $paginator];
     }
 
+        protected function getCommentForm(Comment $comment){
+
+            $builder = new AnnotationBuilder($this->getEntityManager());
+            $form = $builder->createForm(new Comment());
+            $form->setHydrator(new DoctrineHydrator($this->getEntityManager()), '\Comment');
+            $form->bind($comment);
+
+            return $form;
+        }
 
     public function articleAction(){
         $id = (int) $this->params()->fromRoute('id', 0);
@@ -41,6 +51,10 @@ class IndexController extends BaseController
         if(empty($article)){
             return $this->notFoundAction();
         }
-        return ['article' => $article];
+
+        $comment = new Comment();
+        $form = $this->getCommentForm($comment);
+
+        return ['article' => $article, 'form' => $form];
     }
 }

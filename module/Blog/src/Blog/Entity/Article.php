@@ -226,4 +226,12 @@ class Article
         return $art;
     }
 
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return 'Article class';
+    }
+
 }
