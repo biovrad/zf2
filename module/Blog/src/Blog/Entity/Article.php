@@ -210,4 +210,20 @@ class Article
         $art = mb_substr($art, 0, 15, 'UTF-8') . '...';
         return $art;
     }
+
+    public function getShortArticleForBlog()
+    {
+        $art = $this->getShortArticle();
+        if(empty($art)){
+            $art = $this->getArticle();
+        }
+        return $art;
+    }
+
+    public function getFullArticle()
+    {
+        $art = $this->getShortArticle() . $this->getArticle();
+        return $art;
+    }
+
 }
