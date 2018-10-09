@@ -30,4 +30,17 @@ class IndexController extends BaseController
 
         return ['articles' => $paginator];
     }
+
+
+    public function articleAction(){
+        $id = (int) $this->params()->fromRoute('id', 0);
+        $em = $this->getEntityManager();
+
+        $article = $em->find('Blog\Entity\Article', $id);
+
+        if(empty($article)){
+            return $this->notFoundAction();
+        }
+        return ['article' => $article];
+    }
 }
