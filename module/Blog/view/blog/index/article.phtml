@@ -74,7 +74,21 @@
         })
     })
 </script>
-
+    <?php
+    $comment = $article->getComments();
+    $commentCnt = $comment->count();
+    if($commentCnt){
+        echo "<h3>Коментарии{$commentCnt}</h3>";
+        foreach ($comment as $comm):?>
+            <div class='panel panel-default'>
+                <div class="panel-heading"><?=$comm->getUserEmail()?></div>
+                <div class="panel-body"><?=$comm->getComment()?></div>
+            </div>
+        <?php endforeach;
+    } else {
+        echo "<h3 id='no-comments'>Коментариев нет</h3>";
+    }
+    ?>
 <div id="new-comment" class="panel panel-success" style="display: none">
     <div id="new-comment-email" class="panel-heading">
         <h3 class="panel-title"></h3>
