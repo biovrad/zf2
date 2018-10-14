@@ -10,6 +10,7 @@ use Zend\Form\Annotation;
  *
  * @ORM\Table(name="comment", indexes={@ORM\Index(name="article", columns={"article"})})
  * @ORM\Entity
+ * @Annotation\Name("comment")
  */
 class Comment
 {
