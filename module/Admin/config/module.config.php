@@ -5,7 +5,8 @@ return [
         'invokables' => [
             'Admin\Controller\Index' => 'Admin\Controller\IndexController',
             'category' => 'Admin\Controller\CategoryController',
-            'article' => 'Admin\Controller\ArticleController'
+            'article' => 'Admin\Controller\ArticleController',
+            'comment' => 'Admin\Controller\CommentController'
         ],
     ],
 
@@ -41,6 +42,16 @@ return [
                             'route'    => 'article/[:action/][:id/]',
                             'defaults' => [
                                 'controller' => 'article',
+                                'action'     => 'index',
+                            ],
+                        ],
+                    ],
+                    'comment' => [
+                        'type' => 'segment',
+                        'options' => [
+                            'route'    => 'comment/[:action/][:id/]',
+                            'defaults' => [
+                                'controller' => 'comment',
                                 'action'     => 'index',
                             ],
                         ],
@@ -91,6 +102,11 @@ return [
                         'label' => 'Добавить категорию',
                         'route' => 'admin/category',
                         'action' => 'add',
+                    ],
+                    [
+                        'label' => 'Коментарии',
+                        'route' => 'admin/comment',
+                        'action' => 'index',
                     ],
                 ],
             ]
